@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 4
 =======
 1
@@ -7,3 +8,6 @@
 =======
 2
 >>>>>>> f3337d9 (Update to 2 in STEP and README.md)
+=======
+3
+>>>>>>> 7810707 (Update to 3 in STEP and README.md)
