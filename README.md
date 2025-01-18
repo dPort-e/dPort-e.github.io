@@ -15,6 +15,7 @@ _Create a site or blog from your GitHub repositories with GitHub Pages._
 
 <!--
 <<<<<<< HEAD
+<<<<<<< HEAD
   <<< Author notes: Step 4 >>>
   Start this step by acknowledging the previous step.
   Define terms and link to docs.github.com.
@@ -64,16 +65,23 @@ For more information about configuring front matter, see the [Jekyll frontmatter
   The first step is always the hardest, so pick something easy!
   Link to docs.github.com for further explanations.
   Encourage users to open new tabs for steps!
+=======
+  <<< Author notes: Step 2 >>>
+  Start this step by acknowledging the previous step.
+  Define terms and link to docs.github.com.
+  Historic note: previous version checked for empty pull request, changed to the correct theme `minima`.
+>>>>>>> f3337d9 (Update to 2 in STEP and README.md)
 -->
 
-## Step 1: Enable GitHub Pages
+## Step 2: Configure your site
 
-_Welcome to GitHub Pages and Jekyll :tada:!_
+_You turned on GitHub Pages! :tada:_
 
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
+We'll work in a branch, `my-pages`, that I created for you to get this site looking great. :sparkle:
 
-### :keyboard: Activity: Enable GitHub Pages
+Jekyll uses a file titled `_config.yml` to store settings for your site, your theme, and reusable content like your site title and GitHub handle. You can check out the `_config.yml` file on the **Code** tab of your repository.
 
+<<<<<<< HEAD
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
 1. Under your repository name, click **Settings**.
 1. Click **Pages** in the **Code and automation** section.
@@ -83,6 +91,22 @@ The first step is to enable GitHub Pages on this [repository](https://docs.githu
    > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
    > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
 >>>>>>> 575a737 (Update to 1 in STEP and README.md)
+=======
+We need to use a blog-ready theme. For this activity, we will use a theme named "minima".
+
+### :keyboard: Activity: Configure your site
+
+1. Browse to the `_config.yml` file in the `my-pages` branch.
+1. In the upper right corner, open the file editor.
+1. Add a `theme:` set to **minima** so it shows in the `_config.yml` file as below:
+   ```yml
+   theme: minima
+   ```
+1. (optional) You can modify the other configuration variables such as `title:`, `author:`, and `description:` to further customize your site.
+1. Commit your changes.
+1. (optional) Create a pull request to view all the changes you'll make throughout this course. Click the **Pull Requests** tab, click **New pull request**, set `base: main` and `compare:my-pages`.
+1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+>>>>>>> f3337d9 (Update to 2 in STEP and README.md)
 
 <footer>
 
