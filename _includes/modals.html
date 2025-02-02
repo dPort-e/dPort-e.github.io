@@ -19,6 +19,30 @@
             {% if post.description %}
             <p>{{ post.description }}</p>
             {% endif %}
+            {% if post.img-2 %}
+            <img src="img/{{ post.img-2 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+            {% endif %}
+            {% if post.description-2 %}
+            <p>{{ post.description-2 }}</p>
+            {% endif %}
+            {% if post.img-3 %}
+            <img src="img/{{ post.img-3 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+            {% endif %}
+            {% if post.description-3 %}
+            <p>{{ post.description-3 }}</p>
+            {% endif %}
+            {% if post.img-4 %}
+            <img src="img/{{ post.img-4 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+            {% endif %}
+            {% if post.description-4 %}
+            <p>{{ post.description-4 }}</p>
+            {% endif %}
+            {% if post.img-5 %}
+            <img src="img/{{ post.img-5 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+            {% endif %}
+            {% if post.description-5 %}
+            <p>{{ post.description-5 }}</p>
+            {% endif %}
             <ul class="list-inline item-details">
               {% if post.client %}
               <li>Client:
@@ -31,7 +55,7 @@
               </li>
               {% endif %}
               {% if post.category %}
-              <li>Service:
+              <li>Role:
                 <strong>{{ post.category }}</strong>
               </li>
               {% endif %}

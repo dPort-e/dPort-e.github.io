@@ -482,3 +482,11 @@ footer .footer-below {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
+
+.modal li::marker {
+    color: #{{ site.color.secondary-dark }};
+}
+
+.modal p {
+    padding: 0 0 75px;
+}

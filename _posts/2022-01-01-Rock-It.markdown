@@ -1,0 +1,18 @@
+---
+layout: default
+modal-id: 1
+img: Rockit/R_Menu.jpg
+img-2: Rockit/R_Game.jpg
+img-3: Rockit/R_Grid.jpg
+img-4: Rockit/R_Show.jpg
+img-5: Rockit/R_TT.png
+alt: image-alt
+project-date: January 2022 - April 2022
+client: Dwarves in Bizarre Places
+category: Gameplay Programmer and Quality Assurance
+description: Rock-It is a student game project developed in a custom 'C' engine. Players take the role of chief leader of a dwarf community as they work to become spaceborne. At the same time, elves will occasionaly come an ransack the city, destroying and stealing supplies.
+description-2: I worked on developing a pipeline to allow for buildings to be easily implemented into the game by our designers. Spritesheets, building production values and costs, and building research requirements were all taken into consideration when creating the pipeline. This pipeline allowed for buildings to quickly be created and modifyed based on playtesting data.
+description-3: Performance was also imporant for our game. We wanted players to be able to build a large city. In order to do this, I helped in optimizing the graphics of our game.
+description-4: Players were given a large array of buildings that allowed them to progress through the technological ages. We were also able to experiment with multi-tile buildings, as seen on the far right of the playing field. This is thanks to the aforementioned pipeline.
+description-5: The elf attacks were prone to bugs in the early stages of developement. From bizarre calculations to attack rates, all sorts of bugs popped up and were tracked. We used a centralized channel to discuss and distribute the developement and bugfix workload.
+---
