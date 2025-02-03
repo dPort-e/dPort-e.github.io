@@ -7,6 +7,8 @@ img-3: Chlorofell/Chlorofell_lighting.png
 img-4: Chlorofell/Chlorofell_Action.png
 img-5: Chlorofell/Chlorofell_Action_2.png
 alt: image-alt
+game-gallery: https://games.digipen.edu/games/chlorofell
+steam: https://store.steampowered.com/app/3476180/Chlorofell/
 project-date: August 2022 - April 2023
 client: Laughing Stock
 category: Game Physics
