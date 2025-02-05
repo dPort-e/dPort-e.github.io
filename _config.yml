@@ -1,10 +1,10 @@
 # Site settings
 title: Porter's Portfolio
 email: dvidprtr@gmail.com
-#url: https://github.com/jeromelachaud/freelancer-theme
+url: https://dport-e.github.io/
 description: "This is David Porter's Profile Webpage."
 #keywords: "your keywords, separated by commas"
-skills: "Quality Assurance - Computer Science - Game Designer"
+skills: "Quality Assurance - Computer Science - Game Design"
 meta_author: Porter David
 
 # Google webmaster tools
@@ -30,14 +30,11 @@ color:
   secondary: D2BBA0 #FD6E8A
   secondary-dark: 9F7E69 #A2122F
 
-# # Project Collections
-# collections:
-#   chlorofell:
-
 # Footer settings
 footer:
   copyright: Porter
   location: Location
+  address: Redmond, WA
   social: Around the Web
   credits: Credits
 

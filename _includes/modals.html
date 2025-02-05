@@ -16,43 +16,58 @@
             <h2>{{ post.title }}</h2>
             <hr class="star-primary">
             <img src="img/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-            {% if post.description %}
-            <p>{{ post.description }}</p>
+            <!-- Portfolio Modal Body START -->
+            {% if post.tags contains "portfolio" %}
+              {% if post.description %}
+                <p>{{ post.description }}</p>
+              {% endif %}
+              {% if post.img-2 %}
+                <img src="img/{{ post.img-2 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+              {% endif %}
+              {% if post.description-2 %}
+                <p>{{ post.description-2 }}</p>
+              {% endif %}
+              {% if post.img-3 %}
+                <img src="img/{{ post.img-3 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+              {% endif %}
+              {% if post.description-3 %}
+                <p>{{ post.description-3 }}</p>
+              {% endif %}
+              {% if post.img-4 %}
+                <img src="img/{{ post.img-4 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+              {% endif %}
+              {% if post.description-4 %}
+                <p>{{ post.description-4 }}</p>
+              {% endif %}
+              {% if post.img-5 %}
+                <img src="img/{{ post.img-5 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+              {% endif %}
+              {% if post.description-5 %}
+                <p>{{ post.description-5 }}</p>
+              {% endif %}
+              <ul class="list-inline">
+                <li>
+                  {% if post.game-gallery %}
+                  <a href="{{ post.game-gallery }}" class="btn btn-outline">Visit DigiPen Game Gallery</a>
+                  {% endif %}
+                  {% if post.steam %}
+                  <a href="{{ post.steam }}" class="btn btn-outline">Visit Steam</a>
+                  {% endif %}
+                </li>
+              </ul>
             {% endif %}
-            {% if post.img-2 %}
-            <img src="img/{{ post.img-2 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+            <!-- Portfolio Modal Body END -->
+            <!-- Publication Modal Body START -->
+            {% if post.tags contains "publication" %}
+              {% if post.vid %}
+                <video width="480" height="270" controls>
+                  <source src="img/{{ post.vid }}" type="video/mp4">
+                  <source src="img/{{ post.vid-ogg }}" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+              {% endif %}
             {% endif %}
-            {% if post.description-2 %}
-            <p>{{ post.description-2 }}</p>
-            {% endif %}
-            {% if post.img-3 %}
-            <img src="img/{{ post.img-3 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-            {% endif %}
-            {% if post.description-3 %}
-            <p>{{ post.description-3 }}</p>
-            {% endif %}
-            {% if post.img-4 %}
-            <img src="img/{{ post.img-4 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-            {% endif %}
-            {% if post.description-4 %}
-            <p>{{ post.description-4 }}</p>
-            {% endif %}
-            {% if post.img-5 %}
-            <img src="img/{{ post.img-5 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-            {% endif %}
-            {% if post.description-5 %}
-            <p>{{ post.description-5 }}</p>
-            {% endif %}
-            <ul class="list-inline">
-              <li>
-                {% if post.game-gallery %}
-                <a href="{{ post.game-gallery }}" class="btn btn-outline">Visit DigiPen Game Gallery</a>
-                {% endif %}
-                {% if post.steam %}
-                <a href="{{ post.steam }}" class="btn btn-outline">Visit Steam</a>
-                {% endif %}
-              </li>
-            </ul>
+            <!-- Publication Modal Body END -->
             <ul class="list-inline item-details">
               {% if post.client %}
               <li>Client:

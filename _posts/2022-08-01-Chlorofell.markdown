@@ -1,6 +1,7 @@
 ---
 layout: default
 modal-id: 2
+tags: portfolio
 img: Chlorofell/Chlorofell_Main_Menu.png
 img-2: Chlorofell/Chlorofell_Editor.png
 img-3: Chlorofell/Chlorofell_lighting.png
