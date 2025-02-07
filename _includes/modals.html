@@ -15,9 +15,9 @@
           <div class="modal-body">
             <h2>{{ post.title }}</h2>
             <hr class="star-primary">
-            <img src="img/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
             <!-- Portfolio Modal Body START -->
             {% if post.tags contains "portfolio" %}
+              <img src="img/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
               {% if post.description %}
                 <p>{{ post.description }}</p>
               {% endif %}
@@ -65,6 +65,9 @@
                   <source src="img/{{ post.vid-ogg }}" type="video/ogg">
                   Your browser does not support the video tag.
                 </video>
+              {% endif %}
+              {% if post.description %}
+                <p>{{ post.description }}</p>
               {% endif %}
             {% endif %}
             <!-- Publication Modal Body END -->
