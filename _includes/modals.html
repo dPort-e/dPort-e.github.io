@@ -16,6 +16,16 @@
             <h2>{{ post.title }}</h2>
             <hr class="star-primary">
             <!-- Portfolio Modal Body START -->
+            <ul class="list-inline">
+              <li>
+                {% if post.game-gallery %}
+                <a href="{{ post.game-gallery }}" class="btn btn-outline">Visit DigiPen Game Gallery</a>
+                {% endif %}
+                {% if post.steam %}
+                <a href="{{ post.steam }}" class="btn btn-outline">Visit Steam</a>
+                {% endif %}
+              </li>
+            </ul>
             {% if post.tags contains "portfolio" %}
               <img src="img/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
               {% if post.description %}
@@ -45,16 +55,6 @@
               {% if post.description-5 %}
                 <p>{{ post.description-5 }}</p>
               {% endif %}
-              <ul class="list-inline">
-                <li>
-                  {% if post.game-gallery %}
-                  <a href="{{ post.game-gallery }}" class="btn btn-outline">Visit DigiPen Game Gallery</a>
-                  {% endif %}
-                  {% if post.steam %}
-                  <a href="{{ post.steam }}" class="btn btn-outline">Visit Steam</a>
-                  {% endif %}
-                </li>
-              </ul>
             {% endif %}
             <!-- Portfolio Modal Body END -->
             <!-- Publication Modal Body START -->
